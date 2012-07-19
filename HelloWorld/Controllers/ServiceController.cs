@@ -25,7 +25,7 @@ namespace HelloWorld.Controllers {
             return new XDocument(
                 new XElement(NS+"goto", new XAttribute("href", "Show"),
                     new XElement(NS+"variable", new XAttribute("name", "result"),
-                        new XElement("sentence", new XText(sentence))
+                        new XElement("sentence", sentence)
                     )
                 )
             );

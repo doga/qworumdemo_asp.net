@@ -23,13 +23,13 @@ namespace HelloWorld.Controllers {
                 new XComment("\n"+
                   "  QWORUM SUPPORT IS MISSING IN YOUR BROWSER:\n"+
                   "  This site only works correctly with Qworum enabled browsers. \n"+
-                  "  Please visit http://www.qworum.com/products\n"
+                  "  Please visit http://www.qworum.com/products .\n"
                 ),
                 new XElement(NS+"goto", 
                     new XAttribute("href", "ReceiveCallResult"),
                     new XElement(NS+"call", 
                         new XAttribute("href", "/Service/Index"),
-                        new XElement("name", new XText("Dave"))
+                        new XElement("name", "Dave")
                     )
                 )
             );
