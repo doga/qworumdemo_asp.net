@@ -19,6 +19,11 @@ namespace HelloWorld.Controllers {
         public XDocument CallService() {
             Response.ContentType="application/xml";
             return new XDocument(
+                new XComment("\n"+
+                  "  QWORUM SUPPORT IS MISSING IN YOUR BROWSER:\n"+
+                  "  This site only works correctly with Qworum enabled browsers. \n"+
+                  "  Please visit  http://www.qworum.com/products\n"
+                ),
                 new XElement(NS+"goto", 
                     new XAttribute("href", "/Home/ReceiveCallResult"),
                     new XElement(NS+"call", 
@@ -32,7 +37,7 @@ namespace HelloWorld.Controllers {
         [HttpPost]
         public ActionResult ReceiveCallResult() {
             XmlDocument doc = ParseXMLPost(Request);
-            ViewBag.Name = (string)EvaluateXPath(doc, "/*/text()");
+            ViewBag.Sentence = (string)EvaluateXPath(doc, "/*/text()");
             return View();
         }
 
