@@ -1,0 +1,15 @@
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\HelloWorld.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\HelloWorld.pdb
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\EntityFramework.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\System.Web.Helpers.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\System.Web.Mvc.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\System.Web.Providers.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\System.Web.Razor.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\System.Web.WebPages.Deployment.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\System.Web.WebPages.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\System.Web.WebPages.Razor.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\bin\EntityFramework.xml
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.dll
+C:\Users\doga\Documents\Visual Studio 2012\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
