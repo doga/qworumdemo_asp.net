@@ -36,20 +36,22 @@ namespace HelloWorld.Controllers {
             return View();
         }
 
+        // boilerplate
+
         protected XNamespace NS = "http://qworum.net/";
 
         protected XmlDocument ParseXMLPost(HttpRequestBase request) {
             XmlDocument doc = new XmlDocument();
-            using (var reader = new StreamReader(request.InputStream)) {
+            if(request.ContentType.IndexOf("application/xml") >= 0){
+              using (var reader = new StreamReader(request.InputStream)) {
+                  try {
+                      doc.LoadXml(reader.ReadToEnd());
+                  } catch (XmlException ex) {
+                      doc = null;
+                  }
+              }
+            }else{
                 try {
-                    doc.LoadXml(reader.ReadToEnd());
-                } catch (XmlException ex) {
-                    doc = null;
-                }
-            }
-            if (doc == null) {
-                try {
-                    doc = new XmlDocument();
                     doc.LoadXml(request.QueryString.Get("qworum"));
                 } catch (Exception ex) {
                     doc = null;

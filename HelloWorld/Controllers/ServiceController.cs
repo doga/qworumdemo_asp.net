@@ -11,7 +11,10 @@ namespace HelloWorld.Controllers {
     public class ServiceController : HomeController {
         [HttpPost]
         new public XDocument Index() {
-            string name = (string)EvaluateXPath(ParseXMLPost(Request), "/*/text()");
+            string name = "none";
+            try{
+              name=(string)EvaluateXPath(ParseXMLPost(Request), "/*/text()");
+            }catch(Exception ex){}
             Response.ContentType="application/xml";
             return new XDocument(
                 new XElement(NS+"goto", new XAttribute("href", "/Service/Show"),
