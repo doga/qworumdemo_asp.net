@@ -17,7 +17,7 @@ namespace HelloWorld.Controllers {
         }
 
         public XDocument CallService() {
-            Response.ContentType="application/xml; charset=utf-8";
+            Response.ContentType="application/xml";
             return new XDocument(
                 new XElement(NS+"goto", 
                     new XAttribute("href", "/Home/ReceiveCallResult"),
