@@ -9,6 +9,7 @@ using System.Xml.Linq;
 
 namespace HelloWorld.Controllers {
     public class ServiceController : HomeController {
+        [HttpPost]
         new public XDocument Index() {
             string name = (string)EvaluateXPath(ParseXMLPost(Request), "/*/text()");
             Response.ContentType="application/xml";
